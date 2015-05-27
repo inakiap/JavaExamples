@@ -16,7 +16,7 @@ public class Cliente implements Runnable {
 				e.printStackTrace();
 			}
 			
-			//synchronized (taquilla) {
+			synchronized (taquilla) {
 				
 				
 				if ((taquilla.quedanEntradas()))
@@ -32,7 +32,7 @@ public class Cliente implements Runnable {
 					{
 					System.out.println("No quedan entradas, se siente");
 					}
-			//}//fin sync
+			}//fin sync
 			
 		}
 		
